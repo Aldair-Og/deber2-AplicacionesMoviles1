@@ -46,7 +46,7 @@ export const Screens2 = () => {
         return;
     }
 
-    
+
     if (number1 === 0 && number2 === 0) {
         setResult('INDETERMINACIÓN');
     } else if (number2 === 0) {
@@ -64,7 +64,7 @@ export const Screens2 = () => {
         <Text style={styles.titlePrincipal}>Calculadora</Text>
         <Text style={styles.textDescription}>Ingresa dos números para dividirlos</Text>
         <View style={styles.formContainer}>
-            <InputComponent placeholder="Numero 1" keyboardType="numeric" handleChange={handleChange} name="num1" />
+            <InputComponent placeholder="Numero  1" keyboardType="numeric" handleChange={handleChange} name="num1" />
             <InputComponent placeholder="Numero 2" keyboardType="numeric" handleChange={handleChange} name="num2" />
             <View style={styles.formContainer}>
             <ButtomComponent textbutton="Dividir" onPress={handleDivide} />
